@@ -14,9 +14,9 @@ cmake .\
 ```
 
 ## 快速开始
-1.启动 feiyilaiExample 示例项目
-2.相关示例代码都在example.cpp里面
-3.具体接口库代码请查看msexport.h和msdk.h
+1. 启动 feiyilaiExample 示例项目
+2. 相关示例代码都在example.cpp里面
+3. 具体接口库代码请查看msexport.h和msdk.h
 
 ## 错误解决
 `如果运行出现由于找不到msdk.dll的错误，把feiyilaiDLL目录下的msdk.dll移动到程序输出文件夹即可`
