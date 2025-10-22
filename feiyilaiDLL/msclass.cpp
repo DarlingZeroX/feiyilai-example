@@ -2,7 +2,7 @@
 #include "msclass.h"
 #include "msdk.h"
 #include<iostream>
-
+ 
 void __stdcall msclass::PrintHandle(int m_hdl)
 {
 	HANDLE handle = mHandleMap[m_hdl];

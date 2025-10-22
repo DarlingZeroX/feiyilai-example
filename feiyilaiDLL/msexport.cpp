@@ -1,6 +1,6 @@
 #include "framework.h"
 #include "msexport.h"
-
+ 
 static msclass* gMSClass = new msclass();
 
 void __stdcall C64_PrintHandle(int m_hdl)

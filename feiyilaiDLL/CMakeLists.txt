@@ -6,6 +6,11 @@ set(CMAKE_C_STANDARD 90)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /MP")
 
+# 开启utf-8编码支持
+if (MSVC)
+    add_compile_options(/utf-8)
+endif()
+
 # 将源代码添加到此项目的可执行文件。
 file(GLOB SRC_FILES
 	"${CMAKE_CURRENT_SOURCE_DIR}/msclass.cpp"
