@@ -1,0 +1,8 @@
+# 忽略的文件夹
+out/
+build/
+Backup/
+.vs/
+
+
+
