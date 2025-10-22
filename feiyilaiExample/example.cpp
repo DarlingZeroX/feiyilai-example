@@ -29,17 +29,17 @@ void FYLExample::ShowExampleWindow()
 		ImGui::Begin("飞易来示例", nullptr, ImGuiWindowFlags_AlwaysAutoResize);                          // 创建ImGui窗口并设置标题
 
         // 鼠标移动岛相对位置
-        ImGui::Text("鼠标移动岛相对位置");
-        ImGui::InputFloat2("##鼠标移动岛相对位置", m_RelativeMousePos);
+        ImGui::Text("鼠标移动到相对位置");
+        ImGui::InputFloat2("##鼠标移动到相对位置", m_RelativeMousePos);
         ImGui::SameLine();
-        if (ImGui::Button("移动##鼠标移动岛相对位置"))
+        if (ImGui::Button("移动##鼠标移动到相对位置"))
         {
             C64_MoveR2(m_FYLDevice, m_RelativeMousePos[0], m_RelativeMousePos[1]);
         }
 
         // 鼠标移动到绝对位置
-        ImGui::Text("鼠标移动岛绝对位置");
-        ImGui::InputFloat2("##鼠标移动岛绝对位置", m_AbsoluteMousePos);
+        ImGui::Text("鼠标移动到绝对位置");
+        ImGui::InputFloat2("##鼠标移动到绝对位置", m_AbsoluteMousePos);
         ImGui::SameLine();
         if (ImGui::Button("移动##鼠标移动相对位置"))
         {
